@@ -285,7 +285,6 @@ class Mamba(nn.Module):
         self.config = config
 
         self.layers = nn.ModuleList([ResidualBlock(config) for _ in range(config.n_layers)])
-        self.dropout = nn.Dropout(0.1)
         #self.norm_f = RMSNorm(config.d_model)
 
     def forward(self, x):
@@ -295,7 +294,6 @@ class Mamba(nn.Module):
 
         for layer in self.layers:
             x = layer(x)
-            x = self.dropout(x)
 
         #x = self.norm_f(x)
 
