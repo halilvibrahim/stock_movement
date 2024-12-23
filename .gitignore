@@ -4,10 +4,17 @@ Models/.ipynb_checkpoints/
 Models/__pycache__/
 .ipynb_checkpoints/
 *.png
-AMZN.csv
-EBAY.csv
-GOOGL.csv
-NVDA.csv
-PEP.csv
-TMUS.csv
+Ensemble_Models/AMZN.csv
+Ensemble_Models/EBAY.csv
+Ensemble_Models/GOOGL.csv
+Ensemble_Models/NVDA.csv
+Ensemble_Models/PEP.csv
+Ensemble_Models/TMUS.csv
+Models/AMZN.csv
+Models/EBAY.csv
+Models/GOOGL.csv
+Models/NVDA.csv
+Models/PEP.csv
+Models/TMUS.csv
+
 
