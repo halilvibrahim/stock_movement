@@ -4,4 +4,10 @@ Models/.ipynb_checkpoints/
 Models/__pycache__/
 .ipynb_checkpoints/
 *.png
+AMZN.csv
+EBAY.csv
+GOOGL.csv
+NVDA.csv
+PEP.csv
+TMUS.csv
 
