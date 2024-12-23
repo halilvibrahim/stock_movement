@@ -16,5 +16,12 @@ Models/GOOGL.csv
 Models/NVDA.csv
 Models/PEP.csv
 Models/TMUS.csv
+Ensemble_Models/TMUS/financial.csv
+Ensemble_Models/financial.csv
+Models/financial.csv
+Ensemble_Models/PEP/financial.csv
+Ensemble_Models/TMUS/TMUS.csv
+Ensemble_Models/NVDA/financial.csv
+Ensemble_Models/PEP/PEP.csv
 
 
