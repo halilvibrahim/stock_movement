@@ -8,11 +8,11 @@ authors:
 title: "Stock Movement Prediction Using Mamba And Ensemble Learning"
 year: 2024
 booktitle: "2024 IEEE International Conference on Big Data (BigData)"
-pages: "6894-6903"
-type: proceedings-article
-publisher: IEEE
+pages: "6894--6903"
+type: inproceedings
+organization: IEEE
 preferred-citation:
-  type: proceedings-article
+  type: inproceedings
   authors:
     - family-names: Akgün
       given-names: Halil İbrahim
@@ -21,5 +21,5 @@ preferred-citation:
   title: "Stock Movement Prediction Using Mamba And Ensemble Learning"
   year: 2024
   booktitle: "2024 IEEE International Conference on Big Data (BigData)"
-  pages: "6894-6903"
-  publisher: IEEE
+  pages: "6894--6903"
+  organization: IEEE
