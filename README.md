@@ -1,3 +1,7 @@
+
+# Stock Movement Prediction Using Mamba And Ensemble Learning  
+**Paper:** [https://ieeexplore.ieee.org/abstract/document/10825870](https://ieeexplore.ieee.org/abstract/document/10825870)
+
 ## Citation
 
 If you use this code in your research, please cite our paper:
