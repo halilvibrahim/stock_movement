@@ -9,12 +9,7 @@ import torch.optim as optim
 from torch.utils.data import DataLoader, TensorDataset
 import numpy as np
 import math
-"""
 
-An implementation of the parallel scan operation in PyTorch (Blelloch version).
-Please see docs/pscan.ipynb for a detailed explanation of what happens here.
-
-"""
 
 def npo2(len):
     """
@@ -231,26 +226,6 @@ class PScan(torch.autograd.Function):
 
 pscan = PScan.apply
 
-
-
-"""
-
-This file closely follows the mamba_simple.py from the official Mamba implementation, and the mamba-minimal by @johnma2006.
-The major differences are :
--the convolution is done with torch.nn.Conv1d
--the selective scan is done in PyTorch
-
-A sequential version of the selective scan is also available for comparison.
-
-- A Mamba model is composed of several layers, which are ResidualBlock.
-- A ResidualBlock is composed of a MambaBlock, a normalization, and a residual connection : ResidualBlock(x) = mamba(norm(x)) + x
-- This leaves us with the MambaBlock : its input x is (B, L, D) and its outputs y is also (B, L, D) (B=batch size, L=seq len, D=model dim).
-First, we expand x into (B, L, 2*ED) (where E is usually 2) and split it into x and z, each (B, L, ED).
-Then, we apply the short 1d conv to x, followed by an activation function (silu), then the SSM.
-We then multiply it by silu(z).
-See Figure 3 of the paper (page 8) for a visual representation of a MambaBlock.
-
-"""
 
 @dataclass
 class MambaConfig:
@@ -558,7 +533,7 @@ class MambaBlock(nn.Module):
         # todo : pq h.squeeze(1) ??
         return y, h.squeeze(1)
 
-# taken straight from https://github.com/johnma2006/mamba-minimal/blob/master/model.py
+
 class RMSNorm(nn.Module):
     def __init__(self, d_model: int, eps: float = 1e-5):
         super().__init__()
