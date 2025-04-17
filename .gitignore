@@ -2,8 +2,8 @@ Ensemble_Models/.ipynb_checkpoints/
 Ensemble_Models/__pycache__/
 Models/.ipynb_checkpoints/
 Models/__pycache__/
-.ipynb_checkpoints/
 *.png
+.ipynb_checkpoints/
 Ensemble_Models/AMZN.csv
 Ensemble_Models/EBAY.csv
 Ensemble_Models/GOOGL.csv

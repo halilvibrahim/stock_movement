@@ -1,5 +1,8 @@
 
 # Stock Movement Prediction Using Mamba And Ensemble Learning  
+
+<img src="mamba-arch.jpg" alt="Mamba Architecture" width="500"/>
+
 **Paper:** [https://ieeexplore.ieee.org/abstract/document/10825870](https://ieeexplore.ieee.org/abstract/document/10825870)
 
 ## Citation
