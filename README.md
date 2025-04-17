@@ -1,7 +1,10 @@
 
 # Stock Movement Prediction Using Mamba And Ensemble Learning  
 
-<img src="mamba-arch.jpg" alt="Mamba Architecture" width="500"/>
+<p align="center"><strong>Mamba Mimarisi</strong></p>
+<p align="center">
+  <img src="mamba-arch.jpg" alt="Mamba Architecture" width="1000"/>
+</p>
 
 **Paper:** [https://ieeexplore.ieee.org/abstract/document/10825870](https://ieeexplore.ieee.org/abstract/document/10825870)
 
